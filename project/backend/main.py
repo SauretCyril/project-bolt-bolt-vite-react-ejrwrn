@@ -19,7 +19,7 @@ app.add_middleware(
 class ProjectData(BaseModel):
     data: Dict[str, Any]
 
-def find_projects( : str = "."):
+def find_projects(start_path: str = "."):
     projects = []
    
     for root, _, files in os.walk(start_path):
